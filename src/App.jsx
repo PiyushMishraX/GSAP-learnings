@@ -1,8 +1,21 @@
-import React from 'react'
+// import React from 'react'
+import './App.css'
+
+// const App = () => {
+//   return (
+//     <div>App</div>
+//   )
+// }
+
 
 const App = () => {
   return (
-    <div>App</div>
+    <main>
+      <section id="section-1">section 1</section>
+      <section id="section-2">section 2</section>
+      <section id="section-3">section 3</section>
+      <section id="section-4">section 4</section>
+    </main>
   )
 }
 

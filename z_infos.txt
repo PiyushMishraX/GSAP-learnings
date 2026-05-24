@@ -1,0 +1,12 @@
+create react project -->
+
+npm create vite@latest .
+
+insatll gsap -->
+npm i gsap 
+npm i @gsap/react
+ORRR
+npm i gsap @gsap/react
+
+
+WE wiil create a smooth transition using gsap transforming black backgrounf to blue
