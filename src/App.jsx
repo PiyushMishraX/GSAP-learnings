@@ -15,7 +15,19 @@ const App = () => {
 
   gsap.registerPlugin(useGSAP) // think it is boiler plate part of gsap in react
 
- 
+  useGSAP(()=>{
+
+    // gsap.to("html") // select the element
+    // gsap.to("#html") // select the element with id
+    // gsap.to(".html") // select the element with class
+    // we can pass both selector or the dom element
+
+    gsap.to("html", {
+      backgroundColor: "#331d89",
+      duration: 5
+    })
+
+  }, [])
 
   return (
     <main>
