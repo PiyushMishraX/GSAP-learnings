@@ -34,8 +34,18 @@ const App = () => {
 
       scrollTrigger: {
         trigger: "#section-1",
+        // start: "Trigger viewport", write the potstions of trigger and viewport // this works too but works everytime when trigger and viewport crosses
+         start: "top top", // section 1 tops crosses view ports top 
 
-        markers: true, // markers are used for debugging
+
+
+
+        markers: true, // markers are used for debugging // it shows stasrt and end in the screen view
+        scrub: true, // animation ends write after the trigger starts , which we do not want so we use scrub // after this transition happens till the srolling is at bottom and reverses if the sroll is reversed
+
+        endTrigger: "#section-4", //trigger for the end
+        // end: "endTrigger viewport",
+        end: "top top",
       },
 
     })
