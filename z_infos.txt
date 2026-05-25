@@ -10,3 +10,17 @@ npm i gsap @gsap/react
 
 
 WE wiil create a smooth transition using gsap transforming black backgrounf to blue
+
+
+
+plugins --> gsap.com --> docs --> plugins ---> scroll plugins --> scroll trigger
+
+plugins are already installed with gsap we just have to use them
+
+
+we have to control when and how color changes from black to blue which we do using scroll trigger
+
+( when section 1 top cross the screen(viewport) top then animation begins and when section 4 tops comes to the top of viewport the animation ends )
+
+
+markers: true, // markers are used for debugging

@@ -4,6 +4,10 @@ import './App.css'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
+// import { ScrollTrigger } from 'gsap/all' // importing for all plugins
+import { ScrollTrigger } from 'gsap/ScrollTrigger' // importing SCROLL trigger from specifics 
+// before using any plugin we have to register it
+
 // const App = () => {
 //   return (
 //     <div>App</div>
@@ -15,6 +19,8 @@ const App = () => {
 
   gsap.registerPlugin(useGSAP) // think it is boiler plate part of gsap in react
 
+  gsap.registerPlugin(ScrollTrigger) // register scroll trigger to use it properly
+
   useGSAP(()=>{
 
     // gsap.to("html") // select the element
@@ -24,7 +30,14 @@ const App = () => {
 
     gsap.to("html", {
       backgroundColor: "#331d89",
-      duration: 5
+      // duration: 5
+
+      scrollTrigger: {
+        trigger: "#section-1",
+
+        markers: true, // markers are used for debugging
+      },
+
     })
 
   }, [])
